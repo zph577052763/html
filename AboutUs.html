@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="1714490089张鹏辉" />
+		<title>关于我们</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css"/>
+	<link rel="stylesheet" href="css/about.css" />
+	<style>
+		.JsJs{width:500px;position: absolute;top:80px;left:420px;background-color: rgba(204,204,204,0.3);
+		color: yellow;font-weight: bold;}
+		#L_Ln{background-color: rgba(204,204,204,0.4);width: 400px;height: 400px;margin-top:130px;margin-left:80px;
+		font-size:20px;font-weight: bold;color: white;}
+		#R_Rl div{margin:80px 30px 20px 60px;color: white;font-size:20px;font-weight:bold;
+		background-color:  rgba(204,204,204,0.3);text-align: center;}
+	</style>
+	<link rel="stylesheet" href="css/cssdh.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+		
+	</head>
+	<body style="background-image: url(img/serv3.jpg);background-size: cover;width: 1333px;">
+		
+		<nav>
+			<div>
+				<a href="index.html">首页</a>
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<a href="Study-Sources.html">学习资源</a>
+					<ul>
+						<li><a href="#">js</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">ajax</a></li>
+					</ul>
+			</div>
+			<div>
+				<a href="AboutUs.html">关于我们</a>
+				<ul>
+						<li><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#">联系我们</a>
+				<ul>
+						<li><a id="phone" href="#">电话</a></li>
+						<li><a id="email" href="#">邮箱</a></li>
+				</ul>
+			</div>
+		</nav>
+		<script>
+			$("nav div").mouseenter(function()
+				{
+					$(this).children("ul").slideDown(300);
+				}
+		).mouseleave(function()
+				{
+					$(this).children("ul").slideUp(300);
+				}
+		);
+		$("#phone").click(function()
+			{
+				
+				alert("电话:010-123456789");		
+			}
+		);
+		$("#email").click(function()
+			{
+				alert("邮箱：123456@163.com");		
+			}
+		);
+		</script>
+		
+		<div id="Jd" style="float: left;margin-top:90px;margin-left: 30px;">
+			<div><img src="img/js.png"></div>
+		</div>
+		<div id="Jd1" style="float: right;margin-top:90px;margin-right: 30px;">
+			<div><img src="img/js.png"></div>
+		</div>
+		
+		<div class="top_a">
+			<!--
+            	描述：点击小圆圈换图
+            -->
+            <div class="JsJs">
+				<p style="text-indent: 2em;">JavaScript语言的前身是LiveScript语言。
+					由美国Netscape（网景）公司的布瑞登.艾克（Brendan Eich）
+					为即将在1995年发布的Navigator2.0浏览器的应用而开发的脚本语言。<br>
+			在微软进入浏览器市场后，此时有3种不同的JavaScript版本同时存在，Navigator中的JavaScript、IE中的JScript以及CEnvi中的ScriptEase。
+			与其他编程语言不同的<br>
+			是，JavaScript并没有一个标准来统一其语法或特性，而这3种不同的版本恰恰突出了这个问题。1997年，
+			JavaScript 1.1版本作为一个草案提交给欧洲计算机制造商协会（ECMA）。<br>
+			最终由来自Netscape、Sun、微软、Borland和其他一些对脚本编程感兴趣的公司的程序员组成了TC39委员会，
+			该委员会被委派来标准化一个通用、跨平台、中立于厂商的脚本语言的语法和语义。<br>
+			TC39委员会制定了“ECMAScript程序语言的规范书”（又称为“ECMA-262标准”），该标准通过国际标准化组织(ISO)采纳通过，
+			作为各种浏览器生产开发所使用的脚本程序的统一标准。</p>
+            </div>
+            <span id="Ht"><img id="qqh" src="img/g666.jpg" width="600" ></span>
+            	<div class="top_b">
+            		<div></div>
+            		<div></div>
+            		<div></div>
+            		<div></div>
+            		<div></div>
+            	</div>
+		</div>
+		
+		<script type="text/javascript" src="js/about.js" ></script>
+		<div style="width:100%;height:900px;background:url(img/timg4-1.jpg);background-size: cover;margin-top:12px;">
+			<div style="float: left;height:800px;width:550px;margin-top:50px;margin-left:80px;">
+				<div id="L_Ln">
+					<div style="text-align: center;padding-top: 20px;">We Offer Best Services</div>
+					<ul style="text-align: center;line-height:60px;">
+						<li>更多要点</li>
+						<li>更多技术</li>
+						<li>更多文章</li>
+					</ul>
+					<button style="border: 1px solid white;margin-top:100px;margin-left: 60px;" onclick="MM()">Read More</button>
+				</div>
+				
+			</div>
+			
+			<div id="R_Rl" style="float: right;height: 800px;width:550px; margin-top:50px;margin-right:80px;">
+				<div>
+					<p>Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>90%</span></p>
+					<div style="width: 300px;height: 30px;border: 1px solid ghostwhite;background-color: rgba(204,204,204,0.5);">
+						<div style="width:280px;height: 30px; background-color:white;position: relative;top: -80px;right: 60px;"></div>
+					</div>
+				</div>
+				<div>
+					<p>Downloads&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>80%</span></p>
+					<div style="width: 300px;height: 30px;border: 1px solid ghostwhite;background-color: rgba(204,204,204,0.5);">
+						<div style="width:260px;height: 30px; background-color:white;position: relative;top: -80px;right: 60px;"></div>
+					</div>
+				</div>
+				<div>
+					<p>numbers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>90%</span></p>
+					<div style="width: 300px;height: 30px;border: 1px solid ghostwhite;background-color: rgba(204,204,204,0.5);">
+						<div style="width:280px;height: 30px; background-color:white;position: relative;top: -80px;right: 60px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function MM()
+			{
+				alert("我们致力于打造更好的学习网站，希望大家多多支持！");
+			}
+		</script>
+		<footer>
+			<div>
+				<ul id="ft" style="list-style: none;">
+					
+				</ul>
+			</div>
+	
+			<div>
+				<ul id="ft1" style="list-style: none;">
+					
+				</ul>
+			</div>
+			
+			<div>
+				<ul id="ft2" style="list-style: none;">
+					
+				</ul>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="js/footer.js" ></script>
+ </body>
+</html>

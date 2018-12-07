@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="1714490089张鹏辉" />
+		<title>登录界面</title>
+		<style>
+			nav{background-size: cover;height: 40px;background-color: #006699;background:linear-gradient(blue,white);}
+			nav div{float: left;width: 90px;height: 40px;line-height: 40px;text-align: center;font-size: 14px;
+			padding-right:110px;padding-left:120px;}
+			nav a{text-decoration: none;color: #fff;display: block;}
+			nav a:hover{background-color: gold;}
+			nav ul{list-style-type:none;margin: 0;padding: 0;background-color: blue;display: none;
+			position: absolute;z-index:100 ;border-top:1px solid ghostwhite ;width: 120px;background:linear-gradient(green ,blue);}
+			.wz{ background-image:url(img/g444.jpg);background-size: cover;text-align: center;width:600px;height:600px;
+			margin-left:730px;margin-top:100px ;line-height:90px;padding-top:90px;font-weight: bold;}
+			.wz1{margin:0  auto;text-align: center;width:500px;background-color: aqua;padding:5px 0 ;}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body style="background-image:url(img/image_04_s.jpg);background-size: cover;width: 1333px;">
+		<nav>
+			<div>
+				<a href="index.html">首页</a>
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<a href="Study-Sources.html">学习资源</a>
+					<ul>
+						<li><a href="#">js</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">ajax</a></li>
+					</ul>
+			</div>
+			<div>
+				<a href="AboutUs.html">关于我们</a>
+				<ul>
+						<li><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#">联系我们</a>
+				<ul>
+						<li><a id="phone" href="#">电话</a></li>
+						<li><a id="email" href="#">邮箱</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script>
+			$("nav div").mouseenter(function()
+				{
+					$(this).children("ul").slideDown(300);
+				}
+		).mouseleave(function()
+				{
+					$(this).children("ul").slideUp(300);
+				}
+		);
+		$("#phone").click(function()
+			{
+				alert("电话:010-123456789");		
+			}
+		);
+		$("#email").click(function()
+			{
+				alert("邮箱：123456@163.com");		
+			}
+		);
+		</script>
+		
+		<div style="float: left;margin-top:100px;color:blue;text-align: center;background-color: rgba(204,204,204,0.4);">
+			<h4>在浏览网页时，经常会看到一些动画效果，<br>
+				使页面显得更加生动。使用JavaScript<br>
+				脚本语言也可以实现动画效果</h4>
+				<img src="img/xiaxue.gif">
+				<h4>快来学习吧！</h4>	
+		</div>
+		<div  class="wz">
+					<form onsubmit="return TJ()" action="index.html">
+						<h1 class="wz1">用户登录</h1>
+						<div style="padding:5px 0 ;">用户名：<input id="username" type="text" onfocus="this.select()"></div>
+						<div style="padding:5px 0 ;">密码：<input id="mima" type="password"  placeholder="（不少于6个字符）"></div>
+						<div style="padding:5px 0 ;"><input type="submit" value="登录"></div>
+					</form>
+		</div>
+				<script>
+					function TJ()
+					{
+						var userN=document.getElementById("username").value;
+						if(userN.length<=0)
+						{
+							alert("用户名为空了！请输入用户名");
+							return false;
+						}
+						var mM=document.getElementById("mima").value;
+						if(mM.length<6)
+						{
+							alert("密码长度不能少于6个字符！");
+							return false;
+						}
+						return true;
+					}
+				</script>
+	</body>
+</html>

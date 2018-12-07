@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="1714490089张鹏辉" />
+		<title>study</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+		<style>
+			#WzJs{width:340px;float: right;line-height:30px; color:black;background-color: rgba(204,204,204,0.5);
+			font-weight: bold;position: absolute;top:830px;left:660px;}
+			#xbt{margin-left:360px;background: rgba(204,204,204,0.5);padding-top:10px;
+			width:90px;color:white;text-align: center;font-weight: bold;}
+			#Pj{background: url(img/p3.jpg); background-size: cover;width:100%;
+			height:360px;}
+			#Pj div{float: left;margin-left:180px;width:200px;border: 2px solid gainsboro;
+			text-align: center;margin-top:20px;background-color:rgba(204,204,204,0.5);color: white;font-weight: bold;}
+			#chageD1{font-size:24px;font-weight: bolder;}
+			#chageD2{font-size:24px;font-weight: bolder;}
+			#chageD3{font-size:24px;font-weight: bolder;}
+		</style>
+		<link rel="stylesheet" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body style="background-image:url(img/ab1432.jpg);background-size: cover;width: 1333px;">
+			<nav>
+				<div>
+					<a href="index.html">首页</a>
+					<ul>
+						<li><a href="login.html">登录</a></li>
+						<li><a href="register.html">注册</a></li>
+					</ul>
+				</div>
+				
+				<div>
+					<a href="Study-Sources.html">学习资源</a>
+						<ul>
+							<li><a href="#">js</a></li>
+							<li><a href="#">css</a></li>
+							<li><a href="#">ajax</a></li>
+						</ul>
+				</div>
+				<div>
+				<a href="AboutUs.html">关于我们</a>
+				<ul>
+						<li><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#">联系我们</a>
+				<ul>
+						<li><a id="phone" href="#">电话</a></li>
+						<li><a id="email" href="#">邮箱</a></li>
+				</ul>
+			</div>
+			</nav>
+			
+		<!--
+        	描述：轮换图
+        -->
+		<div class="top">
+				<div id="left-style" style="float: left;padding-top:300px;"><img src="img/left.png"></div>
+				<div id="right-style" style="float:right;padding-top:300px;"><img src="img/right.png"></div>
+				<p ><h1 >本网主要包括两部分内容</h1>
+					1、JavaScript语言（简称JS）<br>
+					2、jQuery<br>
+				这是网站前端开发中非常重要的部分，用于实现页面元素的动态效果。<br>
+				<h2>推荐软件</h2>
+					1、Dreamweaver：主要用于课堂教学，性能一般，不建议个人使用。<br>
+					2、HBuilder：免费的专业级IDE，建议到官网下载，解压后可直接使用，不需要安装。<br>
+					3、Notepad++：支持多种语言的编辑。有代码提示功能，体量小速度快，特别适合对已有代码的修改调试。</p>
+		</div>
+		<div id="htu">
+			<div id="im1">
+				<div id="xbt">部分教师</div>
+				<img  src="img/g1-team.jpg" width="300">
+			</div>
+				<div id="WzJs">
+					内容：<br>
+					<p style="text-indent: 2em;">所谓的标识符（identifier），就是一个名称。在JavaScript中，<br>
+					标识符用来命名变量和函数，或者用作JavaScript代码中某些循环的标签。<br>
+					在JavaScript中，合法的标识符命名规则和Java以及其他许多语言的命名规则相同，<br>
+					第一个字符必须是字母、下划线（-）或美元符号（$），其后的字符可以是字母、<br>
+					数字或下划线、美元符号。</p>
+				</div>
+		</div>
+	
+		<!-- 轮播图模块 -->
+		<script>
+		//图片数组，如果包含超链接需改造成对象数组
+		var imgs=["g1-team.jpg","team3.jpg","t1.jpg","team2.jpg","team5.jpg"];
+		//当前图片编号
+		var index=0;
+		/* *
+		* 图片切换函数
+		* 修改图片编号，获取下一张图片名，修改<img>标签的src属性
+		* */
+		function nextImg(){
+		index++;
+		if(index==imgs.length) index=0;
+		$("#im1 img").attr("src","img/"+imgs[index]);
+		}
+		//定时器
+		setInterval("nextImg()",2000);
+		</script>
+		<div id="Pj">
+			<p style="text-align: center;color: white;font-weight: bolder;padding-top: 30px;font-size:30px;margin-top:6px;">Our Webs</p>
+			<div>
+				<p><img src="img/timg7（1）.png"></p>
+				<p id="chageD1">1</p>
+				<p>Best Clients</p>
+			</div>
+			<div>
+				<p><img src="img/timg7（2）.png"></p>
+				<p id="chageD2">1</p>
+				<p>Happy Customers</p>
+			</div>
+			<div>
+				<p><img src="img/timg7(3).png"></p>
+				<p id="chageD3">1</p>
+				<p>More Sources</p>
+			</div>
+		</div>
+		
+		<!--
+        	描述：底部循环列表
+        -->
+		<footer>
+			<div>
+				<ul id="ft" style="list-style: none;">
+					
+				</ul>
+			</div>
+	
+			<div>
+				<ul id="ft1" style="list-style: none;">
+					
+				</ul>
+			</div>
+			
+			<div>
+				<ul id="ft2" style="list-style: none;">
+					
+				</ul>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="js/footer.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</body>
+</html>

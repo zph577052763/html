@@ -1,0 +1,4 @@
+.top_a{width:100%;height:400px;text-align: center;}
+.top_b{width: 600px;height: 60px;position: absolute;top:430px;left: 300px;}
+.top_b div{border: 1px solid ghostwhite; border-radius:100% ;width: 30px;height: 30px;float: right;margin-right: 10px;}
+.top_b div:hover{border: 1px solid whitesmoke;background-color:gray;cursor: pointer;}

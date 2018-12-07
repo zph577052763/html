@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="1714490089张鹏辉" />
+		<title>学习资源</title>
+		<link rel="stylesheet" href="css/index.css" type="text/css"/>
+		<link rel="stylesheet" href="css/footer.css" />
+		<style>
+			
+		</style>
+		<link rel="stylesheet" href="css/study.css" />
+		<link rel="stylesheet" href="css/cssdh.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body style="background-image:url(img/b2.jpg) ;background-size: cover;width: 1333px;">
+		<nav>
+			<div>
+				<a href="index.html">首页</a>
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<a href="Study-Sources.html">学习资源</a>
+					<ul>
+						<li><a href="#">js</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">ajax</a></li>
+					</ul>
+			</div>
+			<div>
+				<a href="AboutUs.html">关于我们</a>
+				<ul>
+						<li><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#">联系我们</a>
+				<ul>
+						<li><a id="phone" href="#">电话</a></li>
+						<li><a id="email" href="#">邮箱</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script>
+			$("nav div").mouseenter(function()
+				{
+					$(this).children("ul").slideDown(300);
+				}
+		).mouseleave(function()
+				{
+					$(this).children("ul").slideUp(300);
+				}
+		);
+		$("#phone").click(function()
+			{
+				
+				alert("电话:010-123456789");		
+			}
+		);
+		$("#email").click(function()
+			{
+				alert("邮箱：123456@163.com");		
+			}
+		);
+		</script>
+		
+		<div id="Jd" style="float: left;margin-top:90px;margin-left: 30px;">
+			<div><img src="img/js.png"></div>
+		</div>
+		<div id="Jd1" style="float: right;margin-top:90px;margin-right: 30px;">
+			<div><img src="img/js.png"></div>
+		</div>
+		<div id="nav_lb">
+		<!-- 轮播图模块 -->
+		<div id="d_nav"><img src="img/timg2.jpg" width="500"></div>
+		<!-- 轮播控件模块 -->
+		<div id="dd_nav"></div>
+		</div>
+		<script type="text/javascript" src="js/study.js" ></script>
+		<!--
+        	描述：侧边栏
+        -->
+        <div id="cbcL" style="float: right;position: absolute;top:730px;background-color: rgba(204,204,204,0.5);">
+        	<img src="img/right.png ">
+        </div>
+        <div id="cbcR" style="float:left;position: absolute;top:730px;right:10px;background-color: rgba(204,204,204,0.5);">
+        	<img src="img/left.png">
+        </div>
+        <script>
+        	$(function()
+        		{
+        			$("#cb_navL p").css("display","none");
+        		}
+        	);
+        	
+        	$("#cbcL").click(function()
+        		{
+        			$("#cb_navL p").css("display","block");
+        		}
+        	);
+        	$(function()
+        		{
+        			$("#cb_navR p").css("display","none");
+        		}
+        	);
+        	
+        	$("#cbcR").click(function()
+        		{
+        			$("#cb_navR p").css("display","block");
+        		}
+        	);
+        	
+        </script>
+        
+		<div id="cb_navL">
+			<p style="text-indent: 2em;text-align: center;">在JavaScript中在JavaScript中调用事件处理程序，<br>
+							首先需要获得要处理对象的引用，<br>
+						然后将要执行的处理函数赋值给对应的事件。<br>
+						在HTML中在HTML中分配事件处理程序，<br>
+						只需要在HTML标记中添加相应的事件，<br>
+						并在其中指定要执行的代码或是函数名即可。<br>
+						在页面显示时弹出警告对话框主要是在"<"body">"标签中<br>
+							调用Window对象的alert()方法实现，<br>
+						并且在警告框内可以显示提示字符串文本。</p>
+						
+		</div>
+		
+		<div id="cb_navR">
+			<p style="text-indent: 2em;text-align: center;">Window对象可以直接调用其方法和属性，<br>
+						例如：window.属性名window.方法名（参数列表）<br>
+						Window是不需要使用new运算符来创建的对象。<br>
+						只要直接使用“Window”来引用Window对象即可，<br>
+						在实际运用中，<br>
+						JavaSctipt允许使用一个字符串来给窗口命名，<br>
+						也可以使用一些关键字来代替某些特定的窗口。<br>
+						例如，使用“self”代表当前窗口、“parent”代表父级窗口等。<br>
+						对于这种情况，可以用这些字符串来代表“window”。</p>	
+						
+		</div>
+		<div id="bgy">
+			<div id="bhead">
+				<ul>
+					<li class="cur">Js书籍</li>
+					<li>Js书籍</li>
+					<li>Js书籍</li>
+					<li>Js知识点1</li>
+					<li>Js知识点2</li>
+					<li>Js知识点3</li>
+				</ul>
+				
+			</div>
+			<div id="bdy">
+				<div><span>学习书籍选择之一</span><img src="img/jsB5.jpg" width="500"></div>
+				<div><span>学习书籍选择之一</span><img src="img/jsB4(1).jpg" width="500"></div>
+				<div><span>学习书籍选择之一</span><img src="img/jsB3(1).jpg" width="500"></div>
+					<div style="position: absolute;top:600px;padding-left:20px;background-image: url(img/p2.jpg);background-size: cover;">
+						<p style="text-indent: 2em;text-align: center;">File对象可以获取服务器端指定文件的相关属性，<br>
+							如文件的创建、修改、访问时间。<br>
+						也可以对文件或文件夹进行复制、移除或删除的操作。<br>
+						动态创建File对象使用File对象对指定文件的所有属性进行访问，<br>
+						必需要创建File对象，<br>
+						该对象是通过FileSystemObject对象的GetFile()方法来创建的。<br>
+						GetFile()方法根据指定的路径中的文件返回相应的File对象。</p>
+						<p style="text-indent: 2em;">object.GetFile(filespec)参数说明：<br>
+						object：必选。FileSystemObject的名称。<br>
+						Filespec：必选。指定文件的路径（绝对或相对路径）。<br>
+						例如，将qq.txt文件以File对象进行实例化。代码如下：<br>
+						var	fso=new ActiveXObject("Scripting.FileSystemObject");<br>
+						var	s=fso.GetFile("E:\\word\\JavaScript\\qq.txt");</p>
+					</div>
+				<div style="padding-top:20px;">
+					<img src="img/jsxg.jpg" width="440px" height="500px">
+				</div>
+				<div style="background-image: ;">
+					<p style="text-indent: 2em;text-align: center;">DOM是文档对象模型的简称，<br>
+							是表示文档（如HTML文档）和访问、<br>
+							操作构成文档的各种元素（如HTML标记和文本串）的应用程序接口。<br>
+						W3C定义了标准的文档对象模型，<br>
+						它以树型结构表示HTML和XML文档，<br>
+						并且定义了遍历树和添加、修改、查找树的节点的方法和属性。<br>
+						在Ajax应用中，<br>
+						通过JavaScript操作DOM，<br>
+						 可以达到在不刷新页面的情况下实时修改用户界面的目的。    </p>
+						<p style="text-indent: 2em;text-align: center;"> Ajax的优点:<br>
+						（1）可以把一部分以前由服务器负担的工作转移到客户端，<br>
+						利用客户端闲置的资源进行处理，减轻服务器和带宽的负担，<br>
+						节约空间和成本。<br>
+						（2）无刷新更新页面，<br>
+						从而使用户不用再像以前一样在服务器处理数据时，<br>
+						只能在死板的白屏前焦急的等待。<br>
+						Ajax使用XMLHttpRequest对象发送请求并得到服务器响应，<br>
+						在不需要重新载入整个页面的情况下，<br>
+						就可以通过DOM及时将更新的内容显示在页面上。<br>
+						（3）基于标准化的并被广泛支持的技术，<br>
+						不需要下载插件或者小程序，<br>
+						即可轻松实现桌面应用程序的效果。 </p>
+
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			$("#bhead li").click(function () 
+				{
+					$(this).addClass("cur").siblings().removeClass("cur");
+					var k=$(this).index();
+					$("#bdy div").eq(k).show().siblings().hide();
+				}
+			)
+		</script>
+		
+		<!--
+        	描述：底部循环列表
+        -->
+		<footer>
+			<div>
+				<ul id="ft" style="list-style: none;">
+					
+				</ul>
+			</div>
+	
+			<div>
+				<ul id="ft1" style="list-style: none;">
+					
+				</ul>
+			</div>
+			
+			<div>
+				<ul id="ft2" style="list-style: none;">
+					
+				</ul>
+			</div>
+		</footer>
+		
+		<script type="text/javascript" src="js/footer.js" ></script>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="1714490089张鹏辉" />
+		<title>注册界面</title>
+		<style>
+			nav{background-size: cover;height: 40px;background-color: #006699;background:linear-gradient(blue,white);}
+			nav div{float: left;width: 90px;height: 40px;line-height: 40px;text-align: center;font-size: 14px;
+			padding-right:110px;padding-left:120px;}
+			nav a{text-decoration: none;color: #fff;display: block;}
+			nav a:hover{background-color: gold;}
+			nav ul{list-style-type:none;margin: 0;padding: 0;background-color: blue;display: none;
+			position: absolute;z-index:100 ;border-top:1px solid ghostwhite ;width: 120px;background:linear-gradient(green ,blue);}
+			.wz{background-image: url(img/g444.jpg);background-size: cover; text-align: center;width:600px;margin: auto;
+			float: left;margin-left:60px;	margin-top:30px;height:600px;line-height:90px;padding-top:60px;font-weight: bold;}
+			.wz1{margin:0  auto;text-align: center;width:500px;background-color: rgba(204,204,204,0.4);padding:5px 0 ;}
+			.person{width: 600px;height:660px;border: 1px solid cornflowerblue;margin-top:30px;font-weight:bold;line-height:25px;
+			margin-right:60px ;margin-bottom:20px;float: right;background: url(img/tooplate_image_05.jpg);background-size: cover;}
+			.nav_l_t{text-align: center;margin-top: 10px;background-color: rgba(204,204,204,0.6);padding:30px 0;}
+		</style>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body style="background-image:url(img/image_04_s.jpg);background-size: cover;width: 1333px;">
+		<nav>
+			<div>
+				<a href="index.html">首页</a>
+				<ul>
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+			
+			<div>
+				<a href="Study-Sources.html">学习资源</a>
+					<ul>
+						<li><a href="#">js</a></li>
+						<li><a href="#">css</a></li>
+						<li><a href="#">ajax</a></li>
+					</ul>
+			</div>
+			<div>
+				<a href="AboutUs.html">关于我们</a>
+				<ul>
+						<li><a href="#">简介</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#">联系我们</a>
+				<ul>
+						<li><a id="phone" href="#">电话</a></li>
+						<li><a id="email" href="#">邮箱</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		<script>
+			$("nav div").mouseenter(function()
+				{
+					$(this).children("ul").slideDown(300);
+				}
+		).mouseleave(function()
+				{
+					$(this).children("ul").slideUp(300);
+				}
+		);
+		$("#phone").click(function()
+			{
+				alert("电话:010-123456789");		
+			}
+		);
+		$("#email").click(function()
+			{
+				alert("邮箱：123456@163.com");		
+			}
+		);
+		</script>
+		<div class="person">
+			<form action="login.html" method="post">
+			<div class="nav_l_t">编辑个人资料</div>
+			<table  width="600" border="0" cellpadding="6" cellspacing=""  >
+			  <tr>
+			    <td>头像：</td>
+			    <td><img src="img/graduate.png" width="80"><input type="file"></td>
+			  </tr>
+			  <tr>
+			    <td>昵称：</td>
+			    <td><input type="text"></td>
+			  </tr>
+			  <tr>
+			    <td>性别：</td>
+			    <td>
+			    <label>
+			    	<input type="radio" name="n1" checked>男
+			    </label>
+			    <label>
+			    	<input type="radio" name="n1">女
+			    </label>
+			    <label>
+			    	<input type="radio" name="n1">保密
+			    </label>
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>来自：</td>
+			    <td>
+			    	<select>
+			    		<option>呼和浩特</option>
+			    		<option selected>包头</option>
+			    		<option>乌兰察布</option>
+			    	</select>
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>爱好：</td>
+			    <td>
+			    	<div>
+			    		<label>
+			    			<input type="checkbox">读书
+			    		</label>
+			    		<label>
+			    			<input type="checkbox">音乐
+			    		</label>
+			    		<label>
+			    			<input type="checkbox">美术
+			    		</label>
+			    		<label>
+			    			<input type="checkbox">体育
+			    		</label>
+			    	</div>
+			    	<div>
+			    		<label>
+			    			<input type="checkbox">购物
+			    		</label>
+			    		<label>
+			    			<input type="checkbox">上网
+			    		</label>
+			    		<label>
+			    			<input type="checkbox">玩游戏
+			    		</label>
+			    	</div>
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>个人简介：</td>
+			    <td><textarea cols="50" rows="10"></textarea></td>
+			  </tr>
+			  <tr>
+			    <td colspan="2" align="center"><input type="submit" value="提交"> &nbsp&nbsp<input type="reset" value="重置"></td>
+			  </tr>
+			</table>
+		</form>
+</div>
+		
+		<div  class="wz">
+					<form onsubmit="return TJ()" action="login.html">
+						<h1 class="wz1">新用户注册</h1>
+						<div style="padding:5px 0 ;">用户名：<input id="username" type="text" onfocus="this.select()"></div>
+						<div style="padding:5px 0 ;">密码：<input id="mima" type="password"  placeholder="（不少于6个字符）"></div>
+						<div style="padding:5px 0 ;">确认密码：<input id="mima2" type="password"></div>
+						<div style="padding:5px 0 ;"><input type="submit" value="提交"></div>
+					</form>
+		</div>
+				<script>
+					function TJ()
+					{
+						var userN=document.getElementById("username").value;
+						if(userN.length<=0)
+						{
+							alert("用户名为空了！请输入用户名");
+							return false;
+						}
+						var mM=document.getElementById("mima").value;
+						if(mM.length<6)
+						{
+							alert("密码长度不能少于6个字符！");
+							return false;
+						}
+						var mM2=document.getElementById("mima2").value;
+						if(mM!=mM2)
+						{
+							alert("密码不相匹配！请重新输入");
+							return false;
+						}
+						return true;
+					}
+				</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+

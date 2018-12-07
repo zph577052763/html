@@ -1,0 +1,11 @@
+@keyframes JsD {
+				to { transform: rotate(1turn); }
+				}
+				@keyframes JsD1 {
+				to { transform: rotate(1turn); }
+				}
+				#Jd div img{cursor: pointer;animation: JsD1 2s alternate infinite;}
+				#Jd div img:hover {animation-play-state: paused;}
+				
+				#Jd1 div img{cursor:  pointer;animation: JsD 2s alternate-reverse infinite;}
+				#Jd1 div img:hover {animation-play-state: paused;}
